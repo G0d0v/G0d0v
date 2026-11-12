@@ -163,7 +163,7 @@ def main(token=None):
     for filename, content in outputs.items():
         target = ROOT / "assets" / filename
         temporary = target.with_suffix(".svg.tmp")
-        temporary.write_text(content, encoding="utf-8")
+        temporary.write_text(content, encoding="utf-8", newline="\n")
         temporary.replace(target)
     print("Updated 3 public SVG widgets; no credentials or API responses were saved.")
 
