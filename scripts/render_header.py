@@ -19,15 +19,17 @@ import subprocess
 import tempfile
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 WIDTH, HEIGHT, SCALE = 1280, 400, 2
 FPS, SECONDS = 20, 8
-BG = (21, 22, 25)
+BG = (13, 17, 23)
 TEXT = (242, 240, 237)
-ORBIT = (86, 83, 88)
-PEACH = (230, 184, 162)
+ORBIT = (75, 91, 111)
+ORBIT_SECONDARY = (91, 79, 116)
+BLUE = (105, 183, 255)
+PURPLE = (167, 139, 250)
 RESAMPLE = Image.Resampling.LANCZOS
 
 
@@ -74,10 +76,11 @@ def text_layer(font_path: Path) -> Image.Image:
     # Align the visible cap height at y=72, independent of font ascent metadata.
     baseline = 72 - title.getbbox("G0d0v", anchor="ls")[1] / SCALE
     tracked(draw, "G0d0v", (76, baseline), title, -142 * 0.045)
-    body = font_at(font_path, 44, 500)
-    tracked(draw, "From idea to", (80, 259), body, -44 * 0.015)
-    tracked(draw, "working product.", (80, 311), body, -44 * 0.015)
-    draw.rectangle((80*SCALE, 337*SCALE, 128*SCALE-1, 340*SCALE-1), fill=PEACH)
+    body = font_at(font_path, 40, 500)
+    tracked(draw, "Software. Infrastructure.", (80, 259), body, -40 * 0.015)
+    tracked(draw, "AI-powered possibilities.", (80, 311), body, -40 * 0.015)
+    draw.rectangle((80*SCALE, 337*SCALE, 112*SCALE-1, 340*SCALE-1), fill=BLUE)
+    draw.rectangle((112*SCALE, 337*SCALE, 128*SCALE-1, 340*SCALE-1), fill=PURPLE)
     return image
 
 
@@ -153,22 +156,22 @@ def orbit_point(theta, a, b, angle, center):
     return center[0] + c*u-s*v, center[1] + s*u+c*v
 
 
-def draw_orbit(layer, a, b, degrees, center, width, front=False):
+def draw_orbit(layer, a, b, degrees, center, width, front=False, color=ORBIT):
     start, stop = (0, math.pi) if front else (0, math.tau)
     points = [orbit_point(start+(stop-start)*i/600, a, b,
                           math.radians(degrees), center) for i in range(601)]
     ImageDraw.Draw(layer).line([(x*SCALE, y*SCALE) for x,y in points],
-                              fill=ORBIT+(255,), width=round(width*SCALE))
+                              fill=color+(255,), width=round(width*SCALE))
 
 
 def graphic_layers(moon):
     size = (WIDTH*SCALE, HEIGHT*SCALE)
     back = Image.new("RGBA", size)
     draw_orbit(back, 245, 78, -18, (1035,201), 1.5)
-    draw_orbit(back, 280, 110, 24, (1045,205), 1.2)
+    draw_orbit(back, 280, 110, 24, (1045,205), 1.2, color=ORBIT_SECONDARY)
     front = Image.new("RGBA", size)
     draw_orbit(front, 245, 78, -18, (1035,201), 1.5, True)
-    draw_orbit(front, 280, 110, 24, (1045,205), 1.2, True)
+    draw_orbit(front, 280, 110, 24, (1045,205), 1.2, True, color=ORBIT_SECONDARY)
     disc = Image.new("RGBA", size)
     disc.paste(moon, (913*SCALE,79*SCALE))
     # Only the parts crossing the lunar disc need a separate foreground arc.
@@ -182,10 +185,15 @@ def frame_at(t, static, layers):
     theta = math.tau*t + .08*math.sin(math.tau*t) + 2.65
     point = orbit_point(theta, 245, 78, math.radians(-18), (1035,201))
     satellite = Image.new("RGBA", static.size)
-    d = ImageDraw.Draw(satellite)
     r = 4.5 + .5*math.sin(theta)
     px, py = point
-    d.ellipse(((px-r)*SCALE, (py-r)*SCALE, (px+r)*SCALE, (py+r)*SCALE), fill=PEACH+(255,))
+    # A low-opacity halo belongs only to the moving node, never to the text or moon.
+    sprite = Image.new("RGBA", (40*SCALE,40*SCALE))
+    bounds = ((20-r)*SCALE,(20-r)*SCALE,(20+r)*SCALE,(20+r)*SCALE)
+    ImageDraw.Draw(sprite).ellipse(bounds, fill=BLUE+(58,))
+    sprite = sprite.filter(ImageFilter.GaussianBlur(2.4*SCALE))
+    ImageDraw.Draw(sprite).ellipse(bounds, fill=BLUE+(255,))
+    satellite.paste(sprite, (round((px-20)*SCALE),round((py-20)*SCALE)))
     back, disc, front = layers
     group = back.copy()
     if math.sin(theta) < 0:
@@ -238,7 +246,7 @@ def main():
         assert gif.n_frames == FPS*SECONDS
         duration = sum(gif.seek(i) or gif.info["duration"] for i in range(gif.n_frames))
         assert duration == SECONDS*1000
-    assert (out / "header.gif").stat().st_size < 8_000_000
+    assert (out / "header.gif").stat().st_size < 5_000_000
     print(f"header.gif: {WIDTH}x{HEIGHT}, {FPS*SECONDS} frames, {duration} ms, "
           f"{(out / 'header.gif').stat().st_size:,} bytes, loop=0")
     print("Font:", font_path.name, "(variable weight 800 / 500 when available)")
