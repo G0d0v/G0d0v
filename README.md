@@ -3,137 +3,114 @@
   <img src="assets/header.gif" alt="G0d0v — Software. Infrastructure. AI-powered possibilities." width="1280">
 </picture>
 
-# Hi, I'm G0d0v.
+# G0d0v
 
-**Independent Developer · Infrastructure Engineer · AI Builder**
+**Разработка продуктов · Интерфейсы · Инфраструктура · ИИ**
 
-Building software, engineering infrastructure, and exploring AI-powered technologies.
+Создаю WebApp для Telegram-ботов, веб-приложения и серверные сервисы. Проектирую интерфейс, связываю его с API и платежами, настраиваю инфраструктуру и довожу продукт до запуска.
 
-[About](#about-me) · [Expertise](#areas-of-expertise) · [Stack](#technology-stack) · [Projects](#featured-projects) · [Activity](#github-statistics) · [Contact](#contact)
+Мои проекты объединяют несколько направлений: дизайн, клиентскую и серверную разработку, работу с сетями и автоматизацию. Могу собрать новый продукт с нуля или развить уже работающий сервис.
 
-## About me
+**[Портфолио WebApp](https://github.com/G0d0v/telegram-webapp-portfolio)** · [Что я делаю](#что-я-делаю) · [Проекты](#проекты) · [Технологии](#технологии) · [Обсудить WebApp](#обсудить-webapp)
 
-I build software products and the systems behind them: backend services, web applications,
-network infrastructure, automation, and local AI tooling.
+## Что я делаю
 
-My work spans independent products, server operations, and open-source development.
-I care about usable interfaces, maintainable systems, and reliable deployment and recovery.
+| Направление | Работа |
+| :--- | :--- |
+| **WebApp и Telegram-боты** | Личные кабинеты, подписки, тарифы, баланс, платежи, управление устройствами и интеграция с ботом |
+| **Дизайн и анимация** | Интерфейсы с собственным стилем, адаптивная вёрстка, светлые и тёмные темы, анимации и обратная связь |
+| **Серверная разработка** | API, бизнес-логика, базы данных, интеграции и автоматизация операций |
+| **Инфраструктура и DevOps** | Linux, Docker, VPS, HTTPS, развёртывание, мониторинг, резервное копирование и восстановление |
+| **VPN и сети** | Remnawave, Xray, маршрутизация, клиентские приложения и инфраструктура VPN-сервисов |
+| **ИИ и автоматизация** | Локальные модели, голосовые инструменты, ИИ-агенты, MCP и автоматизация рабочих процессов |
 
-## Areas of expertise
+## Интерфейсы, которые я создаю
 
-| Software engineering | Infrastructure engineering | AI & automation |
-| :--- | :--- | :--- |
-| Backend APIs and full-stack web apps | Linux servers and containerised services | Local LLM tooling and voice workflows |
-| Telegram bots, WebApps and admin tools | VPN, proxies and network routing | AI agents and MCP integrations |
-| Product integrations and performance | Deployment, backups and safe updates | Workflow and operations automation |
+У каждого сервиса свой характер. Светлая **Astra Route**, синий **ANY VPN**, розовая **Luna VPN**, фиолетовый **Паук VPN** и визуальный конструктор **Agora** — примеры моих работ по дизайну и разработке WebApp.
 
-## Programming languages
+<p align="center">
+  <a href="https://github.com/G0d0v/telegram-webapp-portfolio/tree/main/Astra"><img src="https://raw.githubusercontent.com/G0d0v/telegram-webapp-portfolio/main/Astra/home.png" width="29%" alt="Astra Route — светлый личный кабинет VPN"></a>
+  <a href="https://github.com/G0d0v/telegram-webapp-portfolio/tree/main/ANY"><img src="https://raw.githubusercontent.com/G0d0v/telegram-webapp-portfolio/main/ANY/photo_2026-11-23_02-13-18.jpg" width="29%" alt="ANY VPN — тёмная WebApp с синими акцентами"></a>
+  <a href="https://github.com/G0d0v/telegram-webapp-portfolio/tree/main/Pauk"><img src="https://raw.githubusercontent.com/G0d0v/telegram-webapp-portfolio/main/Pauk/photo_2026-11-23_02-14-22.jpg" width="29%" alt="Паук VPN — фиолетовый интерфейс с собственной визуальной метафорой"></a>
+</p>
 
-<img src="https://skillicons.dev/icons?i=python,ts,js&theme=dark" alt="Python, TypeScript, JavaScript" height="48">
+**[Открыть портфолио: все проекты, экраны и анимации](https://github.com/G0d0v/telegram-webapp-portfolio)**
 
-**Python · TypeScript · JavaScript** — detected in my public project repositories by GitHub Linguist.
+Разрабатываю WebApp не только для VPN: такие интерфейсы подходят ботам с подписками, магазинам цифровых товаров, образовательным сервисам и другим продуктам с личным кабинетом.
 
-| Category | Technologies | Context |
-| :--- | :--- | :--- |
-| Shell & automation | Bash / Shell, PowerShell, Windows Batch | Detected in public project code |
-| Web technologies | HTML, CSS | Detected in public project code; markup and styling |
-| Query languages | SQL | PostgreSQL, SQLite and MySQL / MariaDB project work |
-| Configuration & infrastructure | Dockerfile, YAML, JSON, TOML | Containers, application configuration and tooling |
-| Additional project experience | PHP, Java | Web and Minecraft ecosystem work, including LunaCORE |
+## Проекты
+
+| Проект | Что внутри |
+| :--- | :--- |
+| **[Портфолио Telegram WebApp](https://github.com/G0d0v/telegram-webapp-portfolio)** | Пять визуальных направлений: Astra Route, ANY VPN, Luna VPN, Паук VPN и Agora. Скриншоты, пользовательские сценарии и анимация платёжного чека |
+| **[ANY VPN](https://github.com/G0d0v/any-vpn-showcase)** | Кейс пользовательской WebApp и панели ANY VPN CONTROL: интерфейсы, анимации, подписки и архитектура сервиса |
+| **[LunaVPN для Windows](https://github.com/G0d0v/LunaVPN-programm)** | VPN-клиент с выборочным туннелированием для игр и приложений, Electron, sing-box и серверная часть с подписками и оплатой |
+| **[Remnawave SHOP · моя редакция](https://github.com/G0d0v/remnawave-shopbot)** | Доработанная админ-панель, Telegram WebApp, визуальный конструктор, RollyPay, резервное копирование и инструменты обновления |
+| **[Remnawave Installer](https://github.com/G0d0v/remnawave-installer)** | Автоматизация установки панели, узлов, Reality selfsteal и интеграции с ShopBot |
+| **[D2D Platform](https://github.com/G0d0v/d2d-platform)** | Платформа для закрытого сообщества разработчиков: Git, задачи, обсуждения, ИИ-агенты и установка на своих серверах |
 
 <details>
-<summary>Technology exposure & interests</summary>
+<summary>Другие направления работы</summary>
 
-Local model serving, Qwen, Qwen3-TTS, agent tools, MCP, API integrations,
-network transports, and deployment automation. These describe areas of work and exploration,
-not a claim of expert proficiency in every tool or language.
+- **ADS AVANGARD PLATFORM** — рекламная площадка, связывающая бренды и авторов контента: маркетплейс, работа с кампаниями и веб-приложения.
+- **LunaCORE** — Minecraft-экосистема: сайт, инструменты администрирования, лаунчер и серверные интеграции.
+- **Локальные ИИ-инструменты** — работа с языковыми моделями, Qwen, Qwen3-TTS, голосовыми сценариями, агентами и MCP.
 
 </details>
 
-## Technology stack
+## Технологии
 
-<img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,vue,flask,fastapi,nodejs,tailwind,vite,postgres,sqlite,mysql,linux,ubuntu,docker,nginx,git,githubactions&theme=dark&perline=10" alt="Python, TypeScript, JavaScript, React, Next.js, Vue, Flask, FastAPI, Node.js, Tailwind CSS, Vite, PostgreSQL, SQLite, MySQL, Linux, Ubuntu, Docker, Nginx, Git, GitHub Actions" width="580">
+<img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,vue,flask,fastapi,nodejs,tailwind,vite,postgres,sqlite,mysql,linux,ubuntu,docker,nginx,git,githubactions&amp;theme=dark&amp;perline=10" width="580" alt="Python, TypeScript, JavaScript, React, Next.js, Vue, Flask, FastAPI, Node.js, Tailwind CSS, Vite, PostgreSQL, SQLite, MySQL, Linux, Ubuntu, Docker, Nginx, Git и GitHub Actions">
 
-| Area | Selected tools |
+| Область | Инструменты |
 | :--- | :--- |
-| Backend | Python, Flask, FastAPI, Node.js, PHP, REST APIs |
-| Frontend | React, Next.js, Vue 3, TypeScript, Tailwind CSS, Vite |
-| Data | PostgreSQL, SQLite, MySQL / MariaDB |
-| Infrastructure & DevOps | Linux, Ubuntu, Docker, Compose, Nginx, Git, GitHub Actions, VPS, reverse proxies |
-| Networking | Xray, VLESS, SOCKS5 / HTTP proxies, WebSocket, gRPC, XHTTP, Hysteria2 |
-| AI & automation | Local LLMs, Qwen, Qwen3-TTS, AI agents, MCP, workflow automation |
+| **Основные языки** | Python, TypeScript, JavaScript |
+| **Интерфейсы** | React, Next.js, Vue 3, HTML, CSS, Tailwind CSS, Vite |
+| **Серверная часть** | FastAPI, Flask, Node.js, REST API; PHP в отдельных проектах |
+| **Данные** | PostgreSQL, SQLite, MySQL / MariaDB, SQL |
+| **Инфраструктура** | Linux, Ubuntu, Docker, Compose, Nginx, GitHub Actions, VPS |
+| **Сети** | Xray, VLESS, Hysteria2, SOCKS5 / HTTP, WebSocket, gRPC, XHTTP |
+| **Автоматизация** | Bash, PowerShell, Git, ИИ-агенты и MCP |
 
-## Featured projects
+<details>
+<summary>О технологиях и опыте</summary>
 
-Selected engineering work, including projects outside my public GitHub repositories.
-Public source links are included where available.
+Стек отражает инструменты из моих проектов и направлений работы. Основные языки в публичных репозиториях — Python, TypeScript и JavaScript. Также есть опыт PHP и Java, в том числе в веб-проектах и Minecraft-экосистеме. Набор технологий для конкретной задачи выбираю под сам продукт и его инфраструктуру.
 
-### ADS AVANGARD PLATFORM
+</details>
 
-An advertising marketplace connecting brands with content creators.
-Product work across marketplace experiences, campaign workflows, and web applications.
+## Активность на GitHub
 
-### LunaVPN
+<img src="assets/github-stats.svg" width="640" alt="Статистика GitHub: публичные репозитории, вклад и серии активности">
 
-A VPN product and network-infrastructure workstream, connecting service operations,
-automation, and customer-facing software.
+<img src="assets/top-languages.svg" width="640" alt="Распределение языков в публичных проектах">
 
-### LunaCORE
+<img src="assets/contributions.svg" width="860" alt="Календарь активности GitHub за последний год">
 
-A Minecraft ecosystem project spanning a website, administration tools, launcher,
-and server-side integrations.
+<details>
+<summary>Как обновляется статистика</summary>
 
-### Local AI & agent workflows
+Изображения формируются из данных GitHub REST и GraphQL API и хранятся в этом репозитории. Их обновляет [GitHub Actions](https://github.com/G0d0v/G0d0v/actions/workflows/profile-stats.yml).
 
-Local language-model and voice tooling, AI-agent workflows, and MCP integrations.
-An ongoing engineering workstream rather than a single public repository.
+Это показатели публичной активности, а не оценки навыков. Распределение языков включает код исходных проектов в форках; работа за пределами публичных репозиториев в статистике не отражена.
 
-### [Remnawave SHOP — godovwwq edition](https://github.com/G0d0v/remnawave-shopbot)
+</details>
 
-An enhanced edition of Remnawave SHOP featuring a redesigned admin dashboard,
-Telegram WebApp, visual interface builder, RollyPay integration, and safe upstream update tooling.
+## Обсудить WebApp
 
-My engineering work includes interface customisation, backup and rollback tooling,
-Docker operations, and automated checks.
-Based on [CyberERROR/remnawave-shopbot](https://github.com/CyberERROR/remnawave-shopbot);
-the original authors retain credit and the project's MIT notices are preserved.
+Нужна WebApp для вашего Telegram-бота — с нуля или с редизайном существующего интерфейса?
 
-## GitHub statistics
+**[Расскажите о задаче](https://github.com/G0d0v/telegram-webapp-portfolio/issues/new?template=project-request.yml)**
 
-<img src="assets/github-stats.svg" alt="GitHub statistics: public repositories, contributions, and current and longest contribution streaks" width="640">
-
-<img src="assets/top-languages.svg" alt="Programming language distribution in public project repositories" width="640">
-
-These are GitHub measurements, not proficiency scores. Language totals include upstream code
-in forks and exclude this profile repository. Work outside public GitHub is not represented.
-
-## Contribution activity
-
-<img src="assets/contributions.svg" alt="GitHub contribution calendar for the last year" width="860">
-
-Generated from GitHub's contribution calendar. Statistics are refreshed by this repository's
-[workflow](https://github.com/G0d0v/G0d0v/actions/workflows/profile-stats.yml).
-
-## Current focus
-
-- Building independent software products with a stronger backend and infrastructure foundation.
-- Improving deployment, observability, performance, and recovery workflows.
-- Connecting local AI, voice tooling, agents, and useful everyday automation.
-- Sharing selected engineering work through open source.
-
-## Contact
-
-[GitHub · @G0d0v](https://github.com/G0d0v)
+Для начала достаточно описать назначение бота, основные действия пользователя и нужные функции: подписки, платежи, каталог, личный кабинет или интеграции.
 
 ---
 
 <details>
-<summary>About this profile's visuals and data</summary>
+<summary>Об авторстве и материалах</summary>
 
-The lunar header is an original procedural animation with a static version for reduced-motion
-preferences. Statistics are SVG files stored in this repository, generated with GitHub's REST
-and GraphQL APIs; they do not rely on an external statistics image server.
-Technology icons are provided by [Skill Icons](https://github.com/tandpfun/skill-icons).
-See [profile maintenance](docs/PROFILE_MAINTENANCE.md) for data scope and rendering commands.
+Доработки Remnawave SHOP основаны на [CyberERROR/remnawave-shopbot](https://github.com/CyberERROR/remnawave-shopbot); авторство исходного проекта и уведомления MIT сохранены. Иконки технологий — [Skill Icons](https://github.com/tandpfun/skill-icons).
+
+Лунный баннер — оригинальная процедурная анимация со статичным вариантом для системной настройки уменьшения движения. Технические сведения об оформлении и данных: [обслуживание профиля](docs/PROFILE_MAINTENANCE.md).
 
 </details>
